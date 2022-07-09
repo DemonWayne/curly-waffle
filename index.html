@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Curly Waffle</title>
+  </head>
+
+  <body>
+    <noscript>please enable javascript and refresh the page</noscript>
+    <script src="index.js"></script>
+
+    <h3 id='curly' onclick="curly()">click me to change my color.</h3>
+
+    <script>
+      const colors = ['red', 'yellow', 'green'];
+      function curly() {
+        document.getElementById('curly').style.color = colors[~~(colors.length * Math.random())] ?? 'blue';
+      }
+    </script>
+  </body>
+</html>
